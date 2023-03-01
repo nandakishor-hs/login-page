@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>First Page</title>
+    <link rel="stylesheet" href="CSS/style1.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo"><img src="images/logo.jpeg" alt="" /></div>
+      <div class="settings">
+        <img src="images/gear.png" onclick="popupDisplay()" alt="" />
+      </div>
+      <div class="user-circle"><img src="images/user.png" alt="" /></div>
+      <div class="name">
+        <div class="name-inside">Surya R Admin User</div>
+        <div>(MEMUS-000-002)</div>
+      </div>
+    </header>
+    <div class="overlay" id="overlay" onclick="popupHide()">
+      <div class="logout-popup" id="pop">
+        <div class="popupbox">
+          <div class="pro"><a href="#">My profile</a></div>
+          <div class="sign">
+            <a href="#" onclick="myFunction()">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="menu">
+        <div class="bars"><img src="images/menu.png" alt="" /></div>
+        <div class="users">
+          <a href="#"
+            ><img src="images/group.png" alt="" /> &nbsp; User Management</a
+          >
+        </div>
+      </div>
+      <div class="main-tab">
+        <div class="tab">
+          <button
+            class="tablink"
+            onclick="openPage('Home', this, 'whitesmoke')"
+          >
+            Employee
+          </button>
+          <button
+            class="tablink"
+            onclick="openPage('News', this, 'whitesmoke')"
+            id="defaultOpen"
+          >
+            Login Details
+          </button>
+
+          <div id="Home" class="tabcontent">
+            <div class="search-box">
+              <input class="search-text" type="text" placeholder="Search" />
+              <a class="search-btn" href="#"></a>
+              <img src="images/magnifying-glass.png" alt="" />
+            </div>
+            <div class="table-main">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Email Address</th>
+                  <th>User ID</th>
+                  <th>Phone Number</th>
+                  <th>Project</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>test s one</td>
+                  <td>testsone@mailinator.com</td>
+                  <td>-</td>
+                  <td>(123) 451-2345 (L)</td>
+                  <td></td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>test Sc</td>
+                  <td>testsc@mailinator.com</td>
+                  <td>-</td>
+                  <td>(121) 212-1212 (L)</td>
+                  <td></td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>Jennifer 24 Kemp</td>
+                  <td>jennifer+24@standardc.io</td>
+                  <td>-</td>
+                  <td>(916) 335-4160 (M)</td>
+                  <td>DragonCanna</td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>devbank-devbank</td>
+                  <td>devbank@yopmail.com</td>
+                  <td>MEMUS-B51-96P</td>
+                  <td>(888) 888-8888 (L)</td>
+                  <td>Dev_bank</td>
+                  <td>Membership-Full</td>
+                </tr>
+                <tr>
+                  <td>Jacks jacks</td>
+                  <td>jacks@yopmail.com</td>
+                  <td>-</td>
+                  <td></td>
+                  <td>dev_admin</td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>dev_admin_1 ed</td>
+                  <td>devadmin@yopmail.com</td>
+                  <td>-</td>
+                  <td></td>
+                  <td>dev_admin_can_1</td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>dev_vendor_1 dev_vendor_1 1</td>
+                  <td>dev_vendor_1@yopmail.com</td>
+                  <td>-</td>
+                  <td></td>
+                  <td><dev-vendor_1></dev-vendor_1></td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>Jennifer Kemp</td>
+                  <td>jennifer+302standardc.io</td>
+                  <td>MEMUS-000-014</td>
+                  <td>(916) 335-4160 (L)</td>
+                  <td>StandardC</td>
+                  <td>Membership-Full</td>
+                </tr>
+                <tr>
+                  <td>Surya Admin3</td>
+                  <td>surya+111@standardc.io</td>
+                  <td>-</td>
+                  <td></td>
+                  <td>StandardC</td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>sijo Joseph</td>
+                  <td>sijo+33@accubits.com</td>
+                  <td>MEMUS-5W2-SXE</td>
+                  <td>(666) 666-6666 (L)</td>
+                  <td>Multiple</td>
+                  <td>Membership-Provisional</td>
+                </tr>
+                <tr>
+                  <td>zzz xxx</td>
+                  <td>zz@gmail.com</td>
+                  <td>-</td>
+                  <td></td>
+                  <td>nneezz</td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>Jaquelin ss</td>
+                  <td>techone@mailinator.com</td>
+                  <td>MEMUS-8HD-JYM/td></td>
+                  <td>(123) 456-6666 (L)</td>
+                  <td></td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>Sijo Joseph</td>
+                  <td>sijo+1234@accubits.com</td>
+                  <td>MEMUS-5E2-MIC</td>
+                  <td>(555) 555-5555 (L)</td>
+                  <td>Mercy Wellness1</td>
+                  <td>Membership-Provisional</td>
+                </tr>
+                <tr>
+                  <td>Teddy nk</td>
+                  <td>hj@gmail.com</td>
+                  <td>-</td>
+                  <td></td>
+                  <td>LK</td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>Kathy one1 one1</td>
+                  <td>hj@gamil.com</td>
+                  <td>-</td>
+                  <td></td>
+                  <td>one1</td>
+                  <td>Membership-Inactive</td>
+                </tr>
+                <tr>
+                  <td>Stanislaus John</td>
+                  <td>zzzisss+090@yopmail.com</td>
+                  <td>MEMUS-3FK-3OZ</td>
+                  <td>(915) 996-9739 (M)</td>
+                  <td>Multiple</td>
+                  <td>Membership-Provisional</td>
+                </tr>
+                <tr>
+                  <td>Surya G</td>
+                  <td>surya+100@standardc.io</td>
+                  <td>MEMUS-2EP-WRQ</td>
+                  <td>(510) 962-0094 (L)</td>
+                  <td>Mercy Wellness1</td>
+                  <td>Membership-Full</td>
+                </tr>
+              </table>
+              <div class="pagination">
+                Items per page: 25&nbsp;&nbsp;
+                <img
+                  class="down-arrow"
+                  src="images/down-filled-triangular-arrow.png"
+                  alt=""
+                />&nbsp;&nbsp; 1-25 of 624&nbsp;&nbsp;<img
+                  src="images/backwards.pn"
+                  alt=""
+                />&nbsp;&nbsp;<img
+                  class="left-chevron"
+                  src="images/left-chevron.png"
+                  alt=""
+                />&nbsp;&nbsp;<img
+                  class="right-chevron"
+                  src="images/chevron.png"
+                  alt=""
+                />&nbsp;&nbsp;<img src="images/next-page.pn" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="News" class="tabcontent">
+            <div class="search-box">
+              <input class="search-text" type="text" placeholder="Search" />
+              <a class="search-btn" href="#"></a>
+              <img src="images/magnifying-glass.png" alt="" />
+            </div>
+            <div class="table-main">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Email Address</th>
+                  <th>Project</th>
+                  <th>Last Login</th>
+                  <th>Updated</th>
+                  <th>Expiration</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Surya R Admin User</td>
+                  <td>surya@surya.io</td>
+                  <td>Multiple</td>
+                  <td>Sep 14, 2022 04:48 PM</td>
+                  <td>Aug 16, 2022</td>
+                  <td>71 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Surya AM User</td>
+                  <td>surya2@surya.io</td>
+                  <td>Multiple</td>
+                  <td>Sep 14, 2022 03:24 PM</td>
+                  <td>Aug 16, 2022</td>
+                  <td>71 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Surya Expediated User</td>
+                  <td>surya+3@standardc.io</td>
+                  <td>Multiple</td>
+                  <td>Sep 14, 2022 02:31 PM</td>
+                  <td>Aug 16, 2022</td>
+                  <td>71 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Pooya Sarabandi - Admin</td>
+                  <td>pooya@standardc.io</td>
+                  <td>Multiple</td>
+                  <td>Sep 14,2022 02:22 PM</td>
+                  <td>Jul 29, 2022</td>
+                  <td>53 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Jennifer 24 Kemp</td>
+                  <td>jennifer+24@standardc.io</td>
+                  <td>DragonCanna</td>
+                  <td>Sep 07,2022 09:40 PM</td>
+                  <td>Sep 07, 2022</td>
+                  <td>93 day(s) to go</td>
+                  <td>Pending Approval</td>
+                </tr>
+                <tr>
+                  <td>Jennifer Kemp</td>
+                  <td>jennifer+30@standardc.io</td>
+                  <td>StandardC</td>
+                  <td>Sep 07, 2022 09:34 PM</td>
+                  <td>Aug 18, 2022</td>
+                  <td>73 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Surya Admin2</td>
+                  <td>sgutta@standardc.io</td>
+                  <td>StandardC</td>
+                  <td>Sep 06, 2022 09:32 PM</td>
+                  <td>Aug 16, 2022</td>
+                  <td>71 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Pooya Sarabandi - User</td>
+                  <td>pooya+1@standardc.io</td>
+                  <td>Multiple</td>
+                  <td>Aug 16, 2022 10:11 PM</td>
+                  <td>Aug 16, 2022</td>
+                  <td>53 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>sijo Joseph</td>
+                  <td>sijo+33@accubits.com</td>
+                  <td>Multiple</td>
+                  <td>Aug 12, 2022 05:18 PM</td>
+                  <td>Jul 29, 2022</td>
+                  <td>25 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Sijo Joseph</td>
+                  <td>sijo+1234@accubits.com</td>
+                  <td>Mercy Wellness1</td>
+                  <td>Jul 01, 2022 07:30 PM</td>
+                  <td>Aug 04, 2022</td>
+                  <td>Expired</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Stanislaus John</td>
+                  <td>zzzisss+090@yopmail.com</td>
+                  <td>Multiple</td>
+                  <td>Jun 15, 2022 10:10 AM</td>
+                  <td>Jul 01, 2022</td>
+                  <td>Expired</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Lexis New Pre</td>
+                  <td>messi-pre@mailinator.com</td>
+                  <td>Messi Pre</td>
+                  <td>Apr 27, 2022 12:58 PM</td>
+                  <td>Jun 01, 2022</td>
+                  <td>Expired</td>
+                  <td>Pending Approval</td>
+                </tr>
+                <tr>
+                  <td>Sijo Joseph</td>
+                  <td>sijo-pre@mailinator.com</td>
+                  <td>Test pre Approval</td>
+                  <td>Apr 27, 2022 11:57 PM</td>
+                  <td>Mar 10, 2022</td>
+                  <td>Expired</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Kelcie Ronaldo</td>
+                  <td>ronaldo@mailinator.com</td>
+                  <td></td>
+                  <td>Apr 27, 2022 11:57 AM</td>
+                  <td>Mar 02, 2022</td>
+                  <td>Expired</td>
+                  <td>Deactivated</td>
+                </tr>
+                <tr>
+                  <td>Surya G</td>
+                  <td>surya+4@standardc.io</td>
+                  <td>Test Cannabis by Surya</td>
+                  <td>Apr 21, 2022 07:04 PM</td>
+                  <td>Aug 16, 2022</td>
+                  <td>71 day(s) to go</td>
+                  <td>Approved</td>
+                </tr>
+                <tr>
+                  <td>Huldah Miller</td>
+                  <td>miller@mailinator.com</td>
+                  <td>Multiple</td>
+                  <td>Mar 23, 2022 04:49 AM</td>
+                  <td>Mar 02, 2022</td>
+                  <td>Expired</td>
+                  <td>Deactivated</td>
+                </tr>
+                <tr>
+                  <td>Jennie George</td>
+                  <td>aarji+1@accubits.com</td>
+                  <td></td>
+                  <td>Mar 02, 2022 08:30 PM</td>
+                  <td>Mar 21, 2022</td>
+                  <td>Expired</td>
+                  <td>Pending Approval</td>
+                </tr>
+              </table>
+              <div class="pagination">
+                Items per page: 25&nbsp;&nbsp;
+                <img
+                  class="down-arrow"
+                  src="images/down-filled-triangular-arrow.png"
+                  alt=""
+                />&nbsp;&nbsp; 1-25 of 624&nbsp;&nbsp;<img
+                  src="images/backwards.pn"
+                  alt=""
+                />&nbsp;&nbsp;<img
+                  class="left-chevron"
+                  src="images/left-chevron.png"
+                  alt=""
+                />&nbsp;&nbsp;<img
+                  class="right-chevron"
+                  src="images/chevron.png"
+                  alt=""
+                />&nbsp;&nbsp;<img src="images/next-page.pn" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script1.js"></script>
+  </body>
+</html>
